@@ -17,14 +17,26 @@ Before you start, make sure you have the following installed:
 
 ## 🧠 Step 1: Setting up the Local AI (Ollama)
 
-This app uses the lightweight `qwen2.5:0.5b` model by default so it runs smoothly even on older laptops.
+You have two options for hosting the AI: running it on your computer, or running it directly on your Android phone!
 
+### Option A: Host on your Computer
+This app uses the lightweight `qwen2.5:0.5b` model by default so it runs smoothly even on older laptops.
 1. **Install Ollama** on your computer.
 2. **Open your computer's terminal** and run the following command to download and start the AI model:
    ```bash
    ollama run qwen2.5:0.5b
    ```
 3. Ensure the Ollama server is running in the background. It typically listens on `http://127.0.0.1:11434`.
+
+### Option B: Host directly on your Phone (via Termux)
+If you want the AI to live completely on your Android device:
+1. Download and install **Termux** (from F-Droid).
+2. Install Ollama inside your Termux environment.
+3. Pull a tiny model to play with directly on your phone:
+   ```bash
+   ollama run qwen2.5:0.5b
+   ```
+*(Note: Because the React Native app makes a fetch request to `127.0.0.1`, it will seamlessly connect to the Ollama backend running inside Termux on your actual device!)*
 
 ---
 
