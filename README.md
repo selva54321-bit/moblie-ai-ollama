@@ -13,6 +13,9 @@ Before you start, make sure you have the following installed:
 2. **React Native Environment**: [Setup guide for Android/iOS](https://reactnative.dev/docs/environment-setup) (Android Studio for Android, Xcode for iOS)
 3. **Ollama**: Download from [ollama.com](https://ollama.com/)
 
+
+
+
 ---
 
 ## 🧠 Step 1: Setting up the Local AI (Ollama)
